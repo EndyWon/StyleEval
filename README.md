@@ -29,3 +29,20 @@ Step 3:  test on single image pair
 We tested images of size 512x512 on an Intel Core i7-5820K CPU @ 3.30GHz × 12, the average time is about 126 seconds. We found that the most time was spent on calculating LP scores (about 80 seconds).
 
 Currently the evaluation time is too slow, please consider to use GPU convolution to accelerate the patch matching process in LP calculation.
+
+
+## Citation:
+
+If you find this code useful for your research, please cite the paper:
+
+```
+@article{wang2021evaluate,
+  title={Evaluate and improve the quality of neural style transfer},
+  author={Wang, Zhizhong and Zhao, Lei and Chen, Haibo and Zuo, Zhiwen and Li, Ailin and Xing, Wei and Lu, Dongming},
+  journal={Computer Vision and Image Understanding},
+  volume={207},
+  pages={103203},
+  year={2021},
+  publisher={Elsevier}
+}
+```
