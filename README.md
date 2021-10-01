@@ -20,7 +20,7 @@ Step 2: download pre-trained vgg19 model
 
 `bash download_vgg19.sh`
 
-Step 3:  test on single image pair
+Step 3:  test on a single image pair
 
 `python quality_criteria.py --content ContentImagePath --style StyleImagePath --stylized StylizedImagePath`
 
