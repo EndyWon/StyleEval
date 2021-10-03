@@ -4,6 +4,7 @@ This is the official implementation of paper "[Evaluate and improve the quality 
 ### Environment Implemented:
 - Python 3.6
 - TensorFlow 1.4.0
+- Numpy 1.16.0
 - CUDA 8.0
 
 ### Getting Start
