@@ -1,4 +1,6 @@
 # StyleEval
+**[update 1/14/2022]**
+
 This is the official implementation of paper "[Evaluate and Improve the Quality of Neural Style Transfer](https://www.researchgate.net/publication/350184156_Evaluate_and_improve_the_quality_of_neural_style_transfer)" (CVIU 2021)
 
 ### Environment Implemented:
@@ -7,7 +9,7 @@ This is the official implementation of paper "[Evaluate and Improve the Quality 
 - Numpy 1.16.0
 - CUDA 8.0
 
-### Getting Start
+### Getting Started:
 
 Step 1: clone this repo
 
@@ -18,18 +20,23 @@ Step 1: clone this repo
 
 Step 2: download pre-trained vgg19 model
 
-
 `bash download_vgg19.sh`
 
-Step 3:  test on a single image pair
+### Quality Evaluation:
+
+- Test on a single image pair
 
 `python quality_criteria.py --content ContentImagePath --style StyleImagePath --stylized StylizedImagePath`
 
-### Discussions
+### MO-Net:
 
-We tested images of size 512x512 on an Intel Core i7-5820K CPU @ 3.30GHz × 12, the average time is about 126 seconds. We found that the most time was spent on calculating LP scores (about 80 seconds).
+`python MONet.py --content inputs/Seth.jpg --style inputs/Gogh.jpg`
 
-Currently the evaluation time is too slow, please consider to use GPU convolution to accelerate the patch matching process in LP calculation.
+## Discussions
+
+For **quality evaluation**, we tested images of size 512x512 on an Intel Core i7-5820K CPU @ 3.30GHz × 12, the average time is about 126 seconds. We found that the most time was spent on calculating LP scores (about 80 seconds).
+
+Currently the evaluation time is too slow, one may consider using GPU convolution to accelerate the patch matching process in LP calculation.
 
 
 ## Citation:
