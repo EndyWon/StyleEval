@@ -308,7 +308,7 @@ class Model(object):
     
 
 def main():
-    parser = argparse.ArgumentParser(description='MONet: transfer style of a image onto a content image.',
+    parser = argparse.ArgumentParser(description='MONet: transfer style of an image onto a content image.',
                                     formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     add_arg = parser.add_argument
 
