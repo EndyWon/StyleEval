@@ -313,7 +313,6 @@ def main():
     add_arg = parser.add_argument
 
     add_arg('--content',        default=None, type=str,    help='Content image path.')
-    add_arg('--content-weight',    default=1,  type=float,  help='Weight of content.')
     add_arg('--style',          default=None, type=str,    help='Style image path.')
     add_arg('--iterations',     default=500, type=int,       help='Number of iterations.')
     add_arg('--device',         default='gpu', type=str,    help='devices: "gpu"(default: all gpu) or "gpui"(e.g. gpu0) or "cpu" ')
