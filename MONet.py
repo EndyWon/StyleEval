@@ -240,6 +240,9 @@ class Model(object):
 
         # total loss
         self.loss = self.content_loss + self.global_loss + self.local_loss
+        
+        #self.loss = 10 * self.content_loss + 0.1 * self.global_loss + 100 * self.local_loss    # you can weight each loss by hand like this
+        
         self.grad = tf.gradients(self.loss, self.net['img'])
         tf.summary.scalar('loss', self.loss)
         self.merged = tf.summary.merge_all()
