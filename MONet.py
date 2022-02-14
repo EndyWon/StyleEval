@@ -264,7 +264,7 @@ class Model(object):
                 out = current_img + self.pixel_mean
                 out = np.squeeze(out)
                 out = np.clip(out, 0, 255).astype('uint8')
-                skimage.io.imsave('outputs/liwand-%d.jpg'%(self.iter), out)
+                skimage.io.imsave('outputs/result-%d.jpg'%(self.iter), out)
 
             print('Epoch:%d,loss:%f,local loss:%f,global loss:%f,content loss:%f.'%
                 (self.iter, loss, local_loss, global_loss, content_loss))
